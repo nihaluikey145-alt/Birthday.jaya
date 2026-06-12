@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jayshree Birthday Website - Part 2</title>
+<style>
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#000,#081c5c,#190000);
+color:white;
+text-align:center;
+padding:30px;
+}
+.card{
+max-width:800px;
+margin:auto;
+background:rgba(255,255,255,.08);
+padding:25px;
+border-radius:20px;
+}
+.scan{
+width:150px;height:150px;border-radius:50%;
+border:3px solid #4da6ff;
+display:flex;align-items:center;justify-content:center;
+margin:20px auto;cursor:pointer;font-size:60px;
+}
+#secret{display:none;margin-top:20px;}
+</style>
+<script>
+function unlock(){
+ document.getElementById('secret').style.display='block';
+}
+</script>
+</head>
+<body>
+
+<div class="card">
+<h1>🔐 Fingerprint Surprise</h1>
+<div class="scan" onclick="unlock()">🖐️</div>
+<div id="secret">
+<h2>🎉 Surprise Unlocked!</h2>
+<p>Happy Birthday Dear Jayshree 💗</p>
+</div>
+</div>
+
+<br>
+
+<div class="card">
+<h1>💖 Friendship Memories</h1>
+<p>Thank you for the smiles, memories, and friendship.</p>
+</div>
+
+<br>
+
+<div class="card">
+<h1>👑 Birthday Queen</h1>
+<p>Today belongs to Queen Jayshree ✨</p>
+<audio controls loop>
+<source src="birthday.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+</body>
+</html>
